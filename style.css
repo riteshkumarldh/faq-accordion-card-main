@@ -18,7 +18,7 @@
     --Soft-blue: hsl(240, 73%, 65%);
 
     /* text-color */
-    --Very-dark-grayish-blue: hsl(237, 12%, 33%)
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
     --Dark-grayish-blue: hsl(240, 6%, 50%);
 
     /* divider-color */
@@ -114,6 +114,11 @@ body {
     cursor: pointer;
 }
 
+.question:hover {
+    color: var(--Soft-red);
+    transition: 0.3s;
+}
+
 .question img {
     height: 10px;
     width: 15px;
@@ -122,6 +127,7 @@ body {
 .answer {
     margin-block-start: 10px;
     display: none;
+    color: var(--Dark-grayish-blue);
 }
 
 .answer p {
@@ -182,6 +188,16 @@ body {
         top: -10px;
         transform: scale(1.2);
     }
+
+    .box {
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        transform: scale(0.4);
+        left: -200px;
+        top: 10px;
+    }
+
 
     .faq-content {
         padding: 50px 70px 50px 10px;
